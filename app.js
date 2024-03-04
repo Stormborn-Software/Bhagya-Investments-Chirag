@@ -7,7 +7,7 @@ const homeRouter = require("./routes/home.js");
 
 app.set("view engine", 'ejs');
 app.set("views", path.join(__dirname, "views"));
-// app.use(express.urlencodedz({ extended: true}));
+//app.use(express.urlencodedz({ extended: true}));
 app.engine("ejs", ejsmate);
 app.use(express.static(path.join(__dirname, "/public")));
 
