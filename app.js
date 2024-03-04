@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 app.use("/home", homeRouter);
   
 app.listen(8080, () => {
-    console.log("Listening to Port: http://127.0.0.1:8080/");
+    console.log("Listening to Port: http://127.0.0.1:8080/home");
   });
 
 // // Index Route
