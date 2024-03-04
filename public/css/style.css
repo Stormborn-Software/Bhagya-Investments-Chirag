@@ -23,3 +23,11 @@ body {
   .nav-link {
     color: #222222 !important;
   }
+
+/* Footer */
+
+  #mail {
+    text-decoration: none;
+    font-style: none;
+    color: #fff;
+  }

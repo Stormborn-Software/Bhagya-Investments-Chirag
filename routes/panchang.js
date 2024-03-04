@@ -3,5 +3,5 @@ const router = express.Router();
 const wrapAsync = require("../utils/wrapAsync.js");
 const homeController = require("../controllers/main.js");
 
-router.route("/").get(wrapAsync(homeController.index));
+router.route("/").get(wrapAsync(homeController.panchang));
 module.exports = router;
