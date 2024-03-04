@@ -3,6 +3,7 @@ const app = express();
 const path = require("path");
 const ejsmate = require("ejs-mate");
 const homeRouter = require("./routes/home.js");
+const panchangRouter = require("./routes/panchang.js");
 
 
 app.set("view engine", 'ejs');
@@ -16,9 +17,10 @@ app.get("/", (req, res) => {
   });
 
 app.use("/home", homeRouter);
+app.use("/panchang", panchangRouter);
   
 app.listen(8080, () => {
-    console.log("Listening to Port: http://127.0.0.1:8080/");
+    console.log("Listening to Port: http://127.0.0.1:8080/home");
   });
 
 // // Index Route
