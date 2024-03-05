@@ -36,3 +36,12 @@ body {
 #Quick, #Puja {
     text-decoration: none !important ;
 }
+
+/* Panchang */
+
+.currentDate{
+    font-family: fantasy;
+    margin: 0px 0px 15px;
+    color: #000000;
+    
+}
