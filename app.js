@@ -5,8 +5,10 @@ const ejsmate = require("ejs-mate");
 const homeRouter = require("./routes/home.js");
 const panchangRouter = require("./routes/panchang.js");
 const pujaRouter = require("./routes/puja.js");
+const mongoose = require("mongoose");
 
 const MONGO_URL = "mongodb://127.0.0.1:27017/devpr1";
+
 main()
   .then(() => {
     console.log("Connected to DB");
@@ -14,6 +16,10 @@ main()
   .catch((err) => {
     console.log(err);
   });
+
+async function main() {
+  await mongoose.connect(MONGO_URL);
+}
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
