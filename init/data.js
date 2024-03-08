@@ -4,6 +4,7 @@ const pujaListings = [
         description: "A puja dedicated to Lord Ganesh, the remover of obstacles.",
         image: {
             url: "[Image url]"
+            name: "Ganesh Puja"
         }
     },
     {
@@ -11,6 +12,7 @@ const pujaListings = [
         description: "A puja dedicated to Lord Ganesh, the remover of obstacles.",
         image: {
             url: "[Image url]"
+            name: "Ganesh PUja"
         }
     },
 ];
