@@ -5,29 +5,36 @@ const ejsmate = require("ejs-mate");
 const homeRouter = require("./routes/home.js");
 const panchangRouter = require("./routes/panchang.js");
 const pujaRouter = require("./routes/puja.js");
-const puja1Router = require("./routes/puja.js")
+const mongoose = require("mongoose");
 
+const MONGO_URL = "mongodb://127.0.0.1:27017/devpr1";
 
-app.set("view engine", 'ejs');
+main()
+  .then(() => {
+    console.log("Connected to DB");
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
+async function main() {
+  await mongoose.connect(MONGO_URL);
+}
+
+app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
-//app.use(express.urlencodedz({ extended: true}));
+//app.use(express.urlencoded({ extended: true}));
 app.engine("ejs", ejsmate);
 app.use(express.static(path.join(__dirname, "/public")));
 
 app.get("/", (req, res) => {
-    res.send("Hi, I am Root");
-  });
+  res.send("Hi, I am Root");
+});
 
 app.use("/home", homeRouter);
 app.use("/panchang", panchangRouter);
 app.use("/puja", pujaRouter);
-app.use("/puja1", puja1Router)  
-  
-app.listen(8080, () => {
-    console.log("Listening to Port: http://127.0.0.1:8080/home");
-``  });
 
-// // Index Route
-// app.get("/puja", (req, res) =>{
-//   res.render("puja/index.ejs")
-// });
+app.listen(8080, () => {
+  console.log("Listening to Port: http://127.0.0.1:8080/home");
+});
