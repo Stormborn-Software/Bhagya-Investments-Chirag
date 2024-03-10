@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 app.use("/home", homeRouter);
 app.use("/panchang", panchangRouter);
 app.use("/puja", pujaRouter);
-app.use("/puja1", puja1Router)
+app.use("/puja1", puja1Router)  
   
 app.listen(8080, () => {
     console.log("Listening to Port: http://127.0.0.1:8080/home");
