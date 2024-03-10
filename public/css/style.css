@@ -56,7 +56,9 @@ body {
 }
 
 /* puja */
-
+.container{
+  margin-top: 2%;
+}
 
 
 .btn.btn-transference{
@@ -72,12 +74,16 @@ body {
 }
 
 .card-title{
-  font: 26px "Bebas Neue Bold",fantasy;
-  color: #000000;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal;;
+  color: #f05724 !important;
 }
 
 .card-text{
-  font: 16px"SF pro Text Regualr",sans-serif;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
   color: #353535;
   margin: 0px 0px 15px;
 
@@ -93,8 +99,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-top: -1rem;
-    margin-right: -5rem;
-    margin-left: -5rem;
+    margin-right: -3rem;
+    margin-left: -3rem;
 }
 
 /* puja 1 */
