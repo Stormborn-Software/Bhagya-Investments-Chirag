@@ -55,6 +55,11 @@ body {
 }
 
 /* puja */
+.carde-mb-5{
+  max-height:initial !important;
+  max-width: fit-content !important;
+
+}
 .container{
   margin-top: 2%;
 }
@@ -100,6 +105,11 @@ body {
     margin-top: -1rem;
     margin-right: -3rem;
     margin-left: -3rem;
+}
+.box-image{
+  object-fit: cover !important;
+  width: 100% !important;
+  height: 100%;
 }
 
 /* puja 1 */

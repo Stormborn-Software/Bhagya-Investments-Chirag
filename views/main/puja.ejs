@@ -3,11 +3,13 @@
     <div class="row">
         <% for(let puja of allPujas) { %>
         <article class="col-12 col-lg-6 post-75">
-            <div class="card mb-5" style="max-width: 700px">
+            <div class="card mb-5">
                 <div class="row align-items-center">
                     <div class="col-12 col-md-6">
                      <div class="box-image">
-                        <img src="<%= puja.image.url %>" class="img-fluid rounded-start" alt="<%= puja.image.name %>">
+                        <img  decoding="async" width="768" height="1024"
+                        src="<%= puja.image.url %>" class="img-fluid wp-post-image" alt="<%= puja.image.name %>" 
+                        sizes="(max-width: 768) 100vw, 768px" >
                      </div>
                     </div>
                   <div class="col-12 col-md-6">
@@ -25,8 +27,28 @@
         <% }%>
     </div>  
 </div>
-  
 
+<!-- <div class="container">
+    <div class="row">
+        <% for(let puja of allPujas) { %>
+            <div class="card mb-5" style="max-width: 550px;">
+                <div class="row align-items-center">
+                  <div class="col-md-4">
+                    <img src="<%= puja.image.url %>" class="img-fluid rounded-start" alt="<%= puja.image.name %>">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title"><%= puja.title %></h5>
+                      <p class="card-text"><%= puja.description %></p>
+                      <a href=".." class="btn btn-transference">Book Puja</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <% }%>            
+
+    </div>
+</div> -->
 
 
 
