@@ -7,6 +7,7 @@ const pujaSchema = new Schema({
         required: true,
     },
     description: String,
+    descriptionMain: String,
     image: {
         url: String,
     }

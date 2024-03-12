@@ -56,14 +56,6 @@ body {
 }
 
 /* puja */
-.carde-mb-5{
-  max-height:initial !important;
-  max-width: fit-content !important;
-
-}
-.container{
-  margin-top: 2%;
-}
 
 .card-img-top {
   /* border-radius: 1rem !important; */
@@ -103,24 +95,11 @@ body {
 
 }
 
-.card.mb-5:hover{
-    opacity: 1px;
+.card:hover{
+    opacity: 2px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   }
 
-.row{
-  
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -1rem;
-    margin-right: -3rem;
-    margin-left: -3rem;
-}
-.box-image{
-  object-fit: cover !important;
-  width: 100% !important;
-  height: 100%;
-}
 
 /* puja 1 */
 
@@ -143,7 +122,7 @@ P{
 }
 
 .h1-title{
-  margin-top: 20px;
+  margin-top: 20px !important;
   font-size: 44px;
   text-transform: uppercase;
   font-family: "Kanit", sans-serif;
@@ -187,6 +166,11 @@ P{
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
+}
+
+.img-top{
+  margin-top: 1.5rem;
+  border-radius: 2%;
 }
 
 
