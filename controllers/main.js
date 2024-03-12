@@ -12,5 +12,7 @@ module.exports.puja = async (req, res) => {
   res.render("./main/puja.ejs", { allPujas });
 };
 module.exports.show = async (req, res) => {
-  res.render("./main/show.ejs");
+  let { id } = req.params;
+  const puja = await Puja.findById(id);
+  res.render("./main/show.ejs", { puja });
 };

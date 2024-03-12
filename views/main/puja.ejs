@@ -1,55 +1,21 @@
 <% layout("/layouts/boilerplate") %>
-<div class="container">
-    <div class="row">
-        <% for(let puja of allPujas) { %>
-        <article class="col-12 col-lg-6 post-75">
-            <div class="card mb-5">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-6">
-                     <div class="box-image">
-                        <img  decoding="async" width="768" height="1024"
-                        src="<%= puja.image.url %>" class="img-fluid wp-post-image" alt="<%= puja.image.name %>" 
-                        sizes="(max-width: 768) 100vw, 768px" >
-                     </div>
-                    </div>
-                  <div class="col-12 col-md-6">
-                     <div class="box-content">
-                      <div class="card-body">
-                      <h5 class="card-title"><%= puja.title %></h5>
-                      <p class="card-text"><%= puja.description %></p>
-                        <a href=".." class="btn btn-transference">Book Puja</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+<div class="row row-cols-lg-2 row-cols-md-3 row-cols-1 mt-3">
+  <% for(let puja of allPujas) { %>
+        <div class="card mb-3 card-margin" style="max-width: 39rem;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="<%= puja.image.url %>" class="img-fluid rounded-start card-img-top" alt="<%= puja.image.name %>" style="height: 13rem;">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><%= puja.title %></h5>
+                <p class="card-text"><%= puja.description %></p>
+                <br>
+                <p class="card-text"><small class="text-body-secondary"><a href="/puja/<%= puja._id %>" class="btn btn-transference">Book Puja</a></small></p>
               </div>
-        </article>
-        <% }%>
-    </div>  
+            </div>
+          </div>
+        </div>
+  <% } %>
 </div>
-
-<!-- <div class="container">
-    <div class="row">
-        <% for(let puja of allPujas) { %>
-            <div class="card mb-5" style="max-width: 550px;">
-                <div class="row align-items-center">
-                  <div class="col-md-4">
-                    <img src="<%= puja.image.url %>" class="img-fluid rounded-start" alt="<%= puja.image.name %>">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title"><%= puja.title %></h5>
-                      <p class="card-text"><%= puja.description %></p>
-                      <a href=".." class="btn btn-transference">Book Puja</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <% }%>            
-
-    </div>
-</div> -->
-
-
-
-      
