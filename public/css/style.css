@@ -4,11 +4,19 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* background-color: #330000 !important; */
+    /* background-color: #c11e29;   */
+    background-color: #512222 !important;
   }
   
   .container {
     flex: 1;
+  }
+
+  .wapp{
+    text-decoration: none;
+    font-size: xxx-large;
+    padding: 0%;
+    margin-right: 5% !important;
   }
   
 /* Navbar */
@@ -56,6 +64,7 @@ body {
 }
 
 /* puja */
+
 
 .card-img-top {
   /* border-radius: 1rem !important; */
@@ -142,6 +151,7 @@ P{
   line-height: 1;
   overflow: hidden;
   text-transform: uppercase;
+  margin-left: 30%;
 }
 
 
@@ -150,6 +160,8 @@ P{
 .btn.btn-theme:hover{
   background-color: #f05724;
   color: #fff;
+  opacity: 2px;
+  box-shadow: rgba(0, 0, 0, 0.20) 0px 14px 40px 0px, rgba(0, 0, 0, 0.10) 0px 0px 0px 2px;
 }
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -159,9 +171,11 @@ P{
   margin-right: auto;
   margin-left: auto;
 }
+p{
+  justify-content: center !important;
+}
 
 .ps-desc{
-  justify-content:space-evenly !important;
   font-family: "Kanit", sans-serif;
   font-weight: 400;
   font-style: normal;

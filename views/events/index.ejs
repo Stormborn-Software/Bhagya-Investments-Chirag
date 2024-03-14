@@ -1,0 +1,83 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="container mt-4">
+  <h2 class="mb-4">Upcoming Events</h2>
+
+  <div class="calendar-view mb-4">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="calendar-sidebar">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Filter Events</h5>
+              <div class="form-group mb-3">
+                <label>Event Type</label>
+                <select class="form-control" id="eventType">
+                  <option value="all">All Events</option>
+                  <option value="puja">Pujas</option>
+                  <option value="festival">Festivals</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Date Range</label>
+                <input type="date" class="form-control mb-2" id="startDate" />
+                <input type="date" class="form-control" id="endDate" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-9">
+        <div class="events-grid">
+          <% events.forEach(event => { %>
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <% if(event.image && event.image.url) { %>
+                <img
+                  src="<%= event.image.url %>"
+                  class="img-fluid rounded-start"
+                  alt="<%= event.title %>"
+                />
+                <% } %>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title"><%= event.title %></h5>
+                  <p class="card-text"><%= event.description %></p>
+                  <p class="card-text">
+                    <small class="text-muted">
+                      <%= event.startDate.toLocaleDateString() %> - <%=
+                      event.endDate.toLocaleDateString() %>
+                    </small>
+                  </p>
+                  <a href="/events/<%= event._id %>" class="btn btn-theme"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <% }) %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const eventType = document.getElementById("eventType");
+    const startDate = document.getElementById("startDate");
+    const endDate = document.getElementById("endDate");
+
+    function filterEvents() {
+      // Add filtering logic here
+    }
+
+    eventType.addEventListener("change", filterEvents);
+    startDate.addEventListener("change", filterEvents);
+    endDate.addEventListener("change", filterEvents);
+  });
+</script>
