@@ -16,7 +16,7 @@ async function main() {
 }
 
 const initDB = async () => {
-  await Puja.deleteMany({});
+  // await Puja.deleteMany({});
   await Puja.insertMany(initData.data);
   console.log("Data Initialized");
 };
