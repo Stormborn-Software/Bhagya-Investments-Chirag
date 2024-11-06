@@ -29,5 +29,6 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages
-          folder: out
+          branch: gh-pages           # Target branch for GitHub Pages
+          folder: out                 # Folder with the static export output
+          clean: true                 # Optional: Clean the target branch before deployment
