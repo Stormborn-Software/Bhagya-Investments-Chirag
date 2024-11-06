@@ -1,7 +1,7 @@
 "use client";
 
 import poojas from '@/data/poojas.json';
-import { Box, Card, CardActionArea, CardContent, CardMedia, Container, Grid, Typography } from '@mui/material';
+import { Box, Card, CardContent, CardMedia, Container, Grid, Typography } from '@mui/material';
 import { useRouter } from 'next/navigation';
 
 export const Pooja = () => {
@@ -45,22 +45,20 @@ export const Pooja = () => {
                   }
                 }}
               >
-                <CardActionArea onClick={() => router.push(`/pooja/${pooja.id}`)}>
-                  <CardMedia
-                    component="img"
-                    height="200"
-                    image={pooja.image.url}
-                    alt={pooja.image.name}
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h6" component="div">
-                      {pooja.title}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      {pooja.description}
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="200"
+                  image={pooja.image.url}
+                  alt={pooja.image.name}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h6" component="div">
+                    {pooja.title}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {pooja.description}
+                  </Typography>
+                </CardContent>
               </Card>
             </Grid>
           ))}
