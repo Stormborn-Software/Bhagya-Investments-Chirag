@@ -103,7 +103,7 @@ export default function NotFound() {
               }}
             >
               <Image
-                src="/images/om.png"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/om.png`}
                 alt="Temple Silhouette"
                 fill
                 style={{

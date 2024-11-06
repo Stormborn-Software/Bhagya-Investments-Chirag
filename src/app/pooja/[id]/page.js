@@ -5,12 +5,17 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { Box, Button, Container, Paper, Typography } from '@mui/material';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { use } from 'react';
+
+// Add this function to generate static paths
+export async function generateStaticParams() {
+  return poojas.poojas.map((pooja) => ({
+    id: pooja.id,
+  }));
+}
 
 export default function PoojaDetail({ params }) {
   const router = useRouter();
-  const id = use(params).id;
-  const pooja = poojas.poojas.find(p => p.id === id);
+  const pooja = poojas.poojas.find(p => p.id === params.id);
 
   if (!pooja) {
     return null;
