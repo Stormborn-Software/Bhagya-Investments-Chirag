@@ -5,8 +5,8 @@ const nextConfig = {
     unoptimized: true,
     domains: ['res.cloudinary.com']
   },
-  basePath: '/Chirag-Nagar-Portfolio',
-  assetPrefix: '/Chirag-Nagar-Portfolio/',
+  basePath: '',
+  assetPrefix: '',
 }
 
 module.exports = nextConfig 
