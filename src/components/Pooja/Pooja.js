@@ -7,6 +7,10 @@ import { useRouter } from 'next/navigation';
 export const Pooja = () => {
   const router = useRouter();
 
+  const handlePoojaClick = (poojaId) => {
+    router.push(`/pooja/${poojaId}`);
+  };
+
   return (
     <Box
       id="pooja"
@@ -37,11 +41,14 @@ export const Pooja = () => {
           {poojas.poojas.map((pooja) => (
             <Grid item xs={12} sm={6} md={4} lg={3} key={pooja.id}>
               <Card 
+                onClick={() => handlePoojaClick(pooja.id)}
                 sx={{ 
                   height: '100%',
-                  transition: 'transform 0.2s',
+                  transition: 'transform 0.2s, box-shadow 0.2s',
+                  cursor: 'pointer',
                   '&:hover': {
                     transform: 'translateY(-5px)',
+                    boxShadow: '0 8px 24px rgba(0,0,0,0.1)',
                   }
                 }}
               >

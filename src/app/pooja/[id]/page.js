@@ -10,8 +10,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function Page({ params }) {
-  const pooja = poojas.poojas.find(p => p.id === params.id);
+export default async function Page({ params }) {
+  let poojaParams = await params;
+  const pooja = await poojas.poojas.find(p => p.id == poojaParams.id);
 
   if (!pooja) {
     redirect('/not-found');
