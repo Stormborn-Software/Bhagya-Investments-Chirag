@@ -2,7 +2,7 @@
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import { Box, Container, IconButton, Stack, Typography } from '@mui/material';
+import { Box, Container, IconButton, Link, Stack, Typography } from '@mui/material';
 
 export const Footer = () => {
   const socialLinks = [
