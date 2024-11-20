@@ -82,7 +82,7 @@ export const Footer = () => {
                 fontSize: '0.8rem' 
               }}
             >
-              Crafted with ❤️ by Stormborn Software
+              Crafted with ❤️ by <Link href="https://github.com/Stormborn-Software" target="_blank" rel="noopener noreferrer" sx={{ color: 'inherit', textDecoration: 'underline' }}>Stormborn Software</Link>
             </Typography>
           </Box>
         </Box>
