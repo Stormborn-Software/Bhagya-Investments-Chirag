@@ -17,6 +17,9 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Bhagya Investments",
   description: "Hedge Smart. Trade Wise.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 import Header from "@/components/Header";
