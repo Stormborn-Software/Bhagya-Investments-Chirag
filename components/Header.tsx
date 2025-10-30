@@ -60,16 +60,29 @@ const Header = () => {
         </nav>
         <div className="hidden md:flex items-center space-x-4">
           <a
-            href="https://chat.whatsapp.com/YOUR_COMMUNITY_INVITE_LINK"
+            href="https://chat.whatsapp.com/KpKIlHAefzFFw9tn2tcMvt?mode=wwt"
             target="_blank"
             rel="noopener noreferrer"
             className="border border-performance-green text-performance-green px-4 py-2 rounded-md font-montserrat text-sm font-medium hover:bg-performance-green hover:text-midnight-navy transition-colors"
           >
             Join WhatsApp Community
           </a>
-          <button className="bg-performance-green text-midnight-navy px-4 py-2 rounded-md font-montserrat text-sm font-medium hover:bg-opacity-90 transition-colors">
-            Open Account
-          </button>
+          <a
+            href="https://choiceindia.com/open-free-demat-account?refercode=QzAwNTIxMzI=&source=Q0hPSUNFX0NPTk5FQ1RfQU5EUk9JRA=="
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-performance-green text-midnight-navy px-4 py-2 rounded-md font-montserrat text-sm font-medium hover:bg-opacity-90 transition-colors"
+          >
+            Demat Account
+          </a>
+          <a
+            href="https://www.delta.exchange/?code=JGARDS"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-electric-blue text-midnight-navy px-4 py-2 rounded-md font-montserrat text-sm font-medium hover:bg-opacity-90 transition-colors"
+          >
+            Crypto Account
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -131,16 +144,29 @@ const Header = () => {
           </nav>
           <div className="mt-12 flex flex-col space-y-6 w-full px-8">
             <a
-              href="https://chat.whatsapp.com/YOUR_COMMUNITY_INVITE_LINK"
+              href="https://chat.whatsapp.com/KpKIlHAefzFFw9tn2tcMvt?mode=wwt"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-performance-green text-performance-green w-full px-4 py-3 rounded-md font-montserrat font-medium hover:bg-performance-green hover:text-midnight-navy transition-colors text-center"
             >
               Join WhatsApp Community
             </a>
-            <button className="bg-performance-green text-midnight-navy w-full px-4 py-3 rounded-md font-montserrat font-medium hover:bg-opacity-90 transition-colors">
-              Open Account
-            </button>
+            <a
+              href="https://choiceindia.com/open-free-demat-account?refercode=QzAwNTIxMzI=&source=Q0hPSUNFX0NPTk5FQ1RfQU5EUk9JRA=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-performance-green text-midnight-navy w-full px-4 py-3 rounded-md font-montserrat font-medium hover:bg-opacity-90 transition-colors text-center"
+            >
+              Demat Account
+            </a>
+            <a
+              href="https://www.delta.exchange/?code=JGARDS"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-electric-blue text-midnight-navy w-full px-4 py-3 rounded-md font-montserrat font-medium hover:bg-opacity-90 transition-colors text-center"
+            >
+              Crypto Account
+            </a>
           </div>
         </div>
       )}

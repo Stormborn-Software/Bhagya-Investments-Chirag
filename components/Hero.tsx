@@ -56,9 +56,14 @@ const Hero = () => {
           className="mt-10 flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up"
           style={{ animationDelay: "0.4s" }}
         >
-          <button className="group bg-performance-green text-midnight-navy px-8 py-4 rounded-lg font-montserrat font-medium hover:bg-opacity-90 transition-all duration-300 hover:shadow-lg hover:shadow-performance-green/50 hover:scale-105">
+          <a
+            href="https://choiceindia.com/open-free-demat-account?refercode=QzAwNTIxMzI=&source=Q0hPSUNFX0NPTk5FQ1RfQU5EUk9JRA=="
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group bg-performance-green text-midnight-navy px-8 py-4 rounded-lg font-montserrat font-medium hover:bg-opacity-90 transition-all duration-300 hover:shadow-lg hover:shadow-performance-green/50 hover:scale-105"
+          >
             <span className="flex items-center justify-center">
-              Open Account
+              Open Demat Account
               <svg
                 className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
                 fill="none"
@@ -73,9 +78,32 @@ const Hero = () => {
                 />
               </svg>
             </span>
-          </button>
+          </a>
           <a
-            href="https://chat.whatsapp.com/YOUR_COMMUNITY_INVITE_LINK"
+            href="https://www.delta.exchange/?code=JGARDS"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group bg-electric-blue text-midnight-navy px-8 py-4 rounded-lg font-montserrat font-medium hover:bg-opacity-90 transition-all duration-300 hover:shadow-lg hover:shadow-electric-blue/50 hover:scale-105"
+          >
+            <span className="flex items-center justify-center">
+              Open Crypto Account
+              <svg
+                className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
+              </svg>
+            </span>
+          </a>
+          <a
+            href="https://chat.whatsapp.com/KpKIlHAefzFFw9tn2tcMvt?mode=wwt"
             target="_blank"
             rel="noopener noreferrer"
             className="group border-2 border-performance-green text-performance-green px-8 py-4 rounded-lg font-montserrat font-medium hover:bg-performance-green/10 transition-all duration-300 hover:shadow-lg hover:shadow-performance-green/30"
@@ -97,7 +125,7 @@ const Hero = () => {
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
           <div className="glass rounded-xl p-6 hover-glow">
             <div className="text-3xl font-bold text-performance-green font-montserrat">
-              10+
+              8+
             </div>
             <div className="text-sm text-slate-grey mt-2">Years Experience</div>
           </div>
@@ -109,7 +137,7 @@ const Hero = () => {
           </div>
           <div className="glass rounded-xl p-6 hover-glow">
             <div className="text-3xl font-bold text-performance-green font-montserrat">
-              ₹50Cr+
+              ₹5Cr+
             </div>
             <div className="text-sm text-slate-grey mt-2">Assets Managed</div>
           </div>
