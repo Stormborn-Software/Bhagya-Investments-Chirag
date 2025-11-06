@@ -7,42 +7,42 @@ const services = [
     title: "Stocks & Derivatives",
     description:
       "Strategic insights for equity and derivatives markets to help maximize your returns.",
-    gradient: "from-performance-green/20 to-electric-blue/20",
-    iconColor: "text-performance-green",
+    gradient: "from-soft-green/20 to-teal/20",
+    iconColor: "text-soft-green",
   },
   {
     icon: <FiDollarSign className="w-10 h-10" />,
     title: "Mutual Funds & SIPs",
     description:
       "Build long-term wealth with our tailored mutual fund and systematic investment plans.",
-    gradient: "from-electric-blue/20 to-performance-green/20",
-    iconColor: "text-electric-blue",
+    gradient: "from-teal/20 to-gold/20",
+    iconColor: "text-gold",
   },
   {
     icon: <FiShield className="w-10 h-10" />,
     title: "Commodities & Currencies",
     description:
       "Navigate global commodity and currency markets, from precious metals to forex pairs.",
-    gradient: "from-performance-green/20 to-electric-blue/20",
-    iconColor: "text-performance-green",
+    gradient: "from-gold/20 to-teal/20",
+    iconColor: "text-teal",
   },
   {
     icon: <FiCpu className="w-10 h-10" />,
     title: "Crypto Investments",
     description:
       "Expert analysis for navigating the volatile world of digital assets like Bitcoin.",
-    gradient: "from-electric-blue/20 to-performance-green/20",
-    iconColor: "text-electric-blue",
+    gradient: "from-teal/20 to-soft-green/20",
+    iconColor: "text-gold",
   },
 ];
 
 const Services = () => {
   return (
-    <section className="bg-deep-navy py-20 relative overflow-hidden">
+    <section className="bg-navy py-20 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-10 right-10 w-72 h-72 bg-performance-green rounded-full filter blur-3xl"></div>
-        <div className="absolute bottom-10 left-10 w-72 h-72 bg-electric-blue rounded-full filter blur-3xl"></div>
+        <div className="absolute top-10 right-10 w-72 h-72 bg-gold rounded-full filter blur-3xl"></div>
+        <div className="absolute bottom-10 left-10 w-72 h-72 bg-teal rounded-full filter blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -59,7 +59,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group relative bg-midnight-navy rounded-2xl p-8 transition-all duration-500 hover:scale-105 cursor-pointer overflow-hidden"
+              className="group relative bg-navy rounded-2xl p-8 transition-all duration-500 hover:scale-105 cursor-pointer overflow-hidden border border-gold/20"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Gradient background on hover */}
@@ -68,7 +68,7 @@ const Services = () => {
               ></div>
 
               {/* Glowing border effect */}
-              <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-performance-green/50 transition-all duration-500"></div>
+              <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-gold/50 transition-all duration-500"></div>
 
               <div className="relative z-10">
                 <div
@@ -76,15 +76,14 @@ const Services = () => {
                 >
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-bold font-montserrat mb-3 text-cloud-white group-hover:text-performance-green transition-colors duration-300">
-                  {service.title}
+                <h3 className="text-xl font-bold font-montserrat mb-3 text-ivory group-hover:text-gold transition-colors duration-300">
                 </h3>
-                <p className="text-slate-grey mb-6 text-sm leading-relaxed">
+                <p className="text-light-gray mb-6 text-sm leading-relaxed">
                   {service.description}
                 </p>
                 <a
                   href="#"
-                  className="inline-flex items-center text-electric-blue font-medium text-sm group-hover:text-performance-green transition-colors duration-300"
+                  className="inline-flex items-center text-teal font-medium text-sm group-hover:text-gold transition-colors duration-300"
                 >
                   Learn More
                   <svg
@@ -104,7 +103,7 @@ const Services = () => {
               </div>
 
               {/* Corner decoration */}
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-performance-green/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-gold/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
           ))}
         </div>

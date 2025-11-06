@@ -2,16 +2,16 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="relative bg-midnight-navy text-cloud-white py-20 md:py-32 overflow-hidden">
+    <section className="relative bg-midnight-blue text-ivory py-20 md:py-32 overflow-hidden">
       {/* Abstract background animation with gradients */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Animated gradient orbs */}
-        <div className="absolute top-0 left-0 w-96 h-96 rounded-full bg-gradient-to-br from-performance-green/20 to-electric-blue/20 filter blur-3xl animate-float"></div>
+        <div className="absolute top-0 left-0 w-96 h-96 rounded-full bg-gradient-to-br from-gold/20 to-teal/20 filter blur-3xl animate-float"></div>
         <div
-          className="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-gradient-to-br from-electric-blue/20 to-performance-green/20 filter blur-3xl animate-float"
+          className="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-gradient-to-br from-teal/20 to-soft-green/20 filter blur-3xl animate-float"
           style={{ animationDelay: "2s" }}
         ></div>
-        <div className="absolute top-1/2 left-1/2 w-72 h-72 rounded-full bg-gradient-to-br from-performance-green/10 to-electric-blue/10 filter blur-2xl animate-glow"></div>
+        <div className="absolute top-1/2 left-1/2 w-72 h-72 rounded-full bg-gradient-to-br from-gold/10 to-teal/10 filter blur-2xl animate-glow"></div>
 
         {/* Geometric grid pattern */}
         <div className="absolute inset-0 opacity-5">
@@ -41,16 +41,15 @@ const Hero = () => {
           Unlock Your <span className="gradient-text">Market Potential</span>.
         </h1>
         <p
-          className="mt-6 text-lg md:text-xl text-slate-grey max-w-3xl mx-auto font-roboto animate-fade-in-up"
+          className="mt-6 text-lg md:text-xl text-light-gray max-w-3xl mx-auto font-roboto animate-fade-in-up"
           style={{ animationDelay: "0.2s" }}
         >
           Expert guidance in Stocks, Crypto, and Derivatives with intelligent
           hedging strategies. We help you{" "}
-          <span className="text-performance-green font-semibold">
-            hedge smart
+          <span className="text-soft-green font-semibold">
           </span>{" "}
           and{" "}
-          <span className="text-electric-blue font-semibold">trade wise</span>.
+          <span className="text-teal font-semibold">trade wise</span>.
         </p>
         <div
           className="mt-10 flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up"
@@ -124,22 +123,22 @@ const Hero = () => {
         {/* Floating stats badges */}
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
           <div className="glass rounded-xl p-6 hover-glow">
-            <div className="text-3xl font-bold text-performance-green font-montserrat">
+            <div className="text-3xl font-bold text-soft-green font-montserrat">
               8+
             </div>
-            <div className="text-sm text-slate-grey mt-2">Years Experience</div>
+            <div className="text-sm text-light-gray mt-2">Years Experience</div>
           </div>
           <div className="glass rounded-xl p-6 hover-glow">
-            <div className="text-3xl font-bold text-electric-blue font-montserrat">
+            <div className="text-3xl font-bold text-gold font-montserrat">
               500+
             </div>
-            <div className="text-sm text-slate-grey mt-2">Active Clients</div>
+            <div className="text-sm text-light-gray mt-2">Active Clients</div>
           </div>
           <div className="glass rounded-xl p-6 hover-glow">
-            <div className="text-3xl font-bold text-performance-green font-montserrat">
+            <div className="text-3xl font-bold text-teal font-montserrat">
               ₹5Cr+
             </div>
-            <div className="text-sm text-slate-grey mt-2">Assets Managed</div>
+            <div className="text-sm text-light-gray mt-2">Assets Managed</div>
           </div>
         </div>
       </div>

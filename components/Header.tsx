@@ -9,7 +9,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-100 bg-midnight-navy/100 backdrop-blur-lg shadow-md">
+    <header className="sticky top-0 z-100 navbar-glass backdrop-blur-lg shadow-md border-b border-gold/20">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
@@ -19,7 +19,7 @@ const Header = () => {
               width={40}
               height={40}
             />
-            <span className="ml-3 text-lg md:text-xl font-bold text-cloud-white font-montserrat">
+            <span className="ml-3 text-lg md:text-xl font-bold text-ivory font-montserrat">
               Bhagya Investments
             </span>
           </Link>
@@ -29,31 +29,31 @@ const Header = () => {
         <nav className="hidden md:flex items-center space-x-6">
           <Link
             href="/"
-            className="text-slate-grey hover:text-cloud-white font-montserrat"
+            className="text-light-gray hover:text-gold font-montserrat transition-colors"
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="text-slate-grey hover:text-cloud-white font-montserrat"
+            className="text-light-gray hover:text-gold font-montserrat transition-colors"
           >
             About
           </Link>
           <Link
             href="/services"
-            className="text-slate-grey hover:text-cloud-white font-montserrat"
+            className="text-light-gray hover:text-gold font-montserrat transition-colors"
           >
             Services
           </Link>
           <Link
             href="/results"
-            className="text-slate-grey hover:text-cloud-white font-montserrat"
+            className="text-light-gray hover:text-gold font-montserrat transition-colors"
           >
             Results
           </Link>
           <Link
             href="/contact"
-            className="text-slate-grey hover:text-cloud-white font-montserrat"
+            className="text-light-gray hover:text-gold font-montserrat transition-colors"
           >
             Contact
           </Link>
@@ -63,7 +63,7 @@ const Header = () => {
             href="https://chat.whatsapp.com/KpKIlHAefzFFw9tn2tcMvt?mode=wwt"
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-performance-green text-performance-green px-4 py-2 rounded-md font-montserrat text-sm font-medium hover:bg-performance-green hover:text-midnight-navy transition-colors"
+            className="btn-secondary px-4 py-2 rounded-md font-montserrat text-sm font-medium transition-all"
           >
             Join WhatsApp Community
           </a>
@@ -71,7 +71,7 @@ const Header = () => {
             href="https://choiceindia.com/open-free-demat-account?refercode=QzAwNTIxMzI=&source=Q0hPSUNFX0NPTk5FQ1RfQU5EUk9JRA=="
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-performance-green text-midnight-navy px-4 py-2 rounded-md font-montserrat text-sm font-medium hover:bg-opacity-90 transition-colors"
+            className="btn-primary px-4 py-2 rounded-md font-montserrat text-sm font-medium transition-all"
           >
             Demat Account
           </a>
@@ -79,7 +79,7 @@ const Header = () => {
             href="https://www.delta.exchange/?code=JGARDS"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-electric-blue text-midnight-navy px-4 py-2 rounded-md font-montserrat text-sm font-medium hover:bg-opacity-90 transition-colors"
+            className="border border-teal text-teal px-4 py-2 rounded-md font-montserrat text-sm font-medium hover:bg-teal/10 transition-colors"
           >
             Crypto Account
           </a>
@@ -89,7 +89,7 @@ const Header = () => {
         <div className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(true)}
-            className="text-cloud-white"
+            className="text-ivory"
           >
             <FiMenu size={28} />
           </button>
@@ -98,10 +98,10 @@ const Header = () => {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-midnight-navy z-50 flex flex-col items-center justify-center">
+        <div className="fixed inset-0 modal-glass z-50 flex flex-col items-center justify-center">
           <button
             onClick={() => setIsMenuOpen(false)}
-            className="absolute top-6 right-6 text-cloud-white"
+            className="absolute top-6 right-6 text-ivory hover:text-gold transition-colors"
           >
             <FiX size={32} />
           </button>

@@ -1,8 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0A192F;
-  --foreground: #E6F1FF;
+  --background: #0E1A2B;
+  --foreground: #F5F5F5;
+  
+  /* Luxury Theme Colors */
+  --color-midnight-blue: #0E1A2B;
+  --color-navy: #16243B;
+  --color-gold: #D4AF37;
+  --color-teal: #00BFA5;
+  --color-ivory: #F5F5F5;
+  --color-light-gray: #B0BEC5;
+  --color-soft-green: #81C784;
+  --color-coral-red: #FF7043;
+  
+  /* Glassmorphism */
+  --glass-bg: rgba(22, 36, 59, 0.7);
+  --glass-border: rgba(212, 175, 55, 0.15);
+  --shadow-glow: 0 0 20px rgba(212, 175, 55, 0.3);
 }
 
 body {
@@ -85,7 +100,7 @@ body {
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #64FFDA 0%, #57CBFF 100%);
+  background: linear-gradient(135deg, #D4AF37 0%, #00BFA5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -93,10 +108,57 @@ body {
 
 /* Glassmorphism effect */
 .glass {
-  background: rgba(23, 42, 69, 0.4);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(100, 255, 218, 0.1);
+  background: rgba(22, 36, 59, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.glass-effect {
+  background: rgba(22, 36, 59, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.navbar-glass {
+  background: rgba(22, 36, 59, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.modal-glass {
+  background: rgba(14, 26, 43, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Button styles */
+.btn-primary {
+  background: #D4AF37;
+  color: #0E1A2B;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #E5C158;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #D4AF37;
+  color: #D4AF37;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(212, 175, 55, 0.1);
+  border-color: #E5C158;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
 }
 
 /* Hover glow effect */
@@ -105,6 +167,6 @@ body {
 }
 
 .hover-glow:hover {
-  box-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
   transform: translateY(-5px);
 }
