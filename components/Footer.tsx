@@ -157,7 +157,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/terms-conditions"
+                  href="/terms"
                   className="text-slate-grey hover:text-performance-green transition-colors duration-300 flex items-center group"
                 >
                   <span className="w-2 h-2 bg-performance-green rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
