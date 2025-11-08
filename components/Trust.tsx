@@ -32,6 +32,7 @@ const testimonials = [
 
 const partners = [
   { name: 'Choice India', logo: 'https://choiceindia.com/_next/static/media/logo-v-2.287b4a4a.svg' },
+  { name: 'Delta Exchange', logo: 'https://press-release-v1-new.s3.ap-south-1.amazonaws.com/order/36893/1754483708724_content_img.jpeg' },
 ];
 
 const Trust = () => {
@@ -102,15 +103,15 @@ const Trust = () => {
             Trusted Trading <span className="text-purple-400">Platform</span>
           </h3>
           <div className="glass rounded-2xl p-10 max-w-md mx-auto border border-purple-500/20 hover:border-pink-500/30 transition-all duration-500">
-            <div className="flex justify-center items-center bg-white p-6 rounded-lg ">
+            <div className="flex justify-center items-center bg-white p-6 rounded-lg space-x-8">
               {partners.map((partner, index) => (
                 <div key={index} className="flex items-center group">
-                  <Image 
+                  <img
                     src={partner.logo} 
                     alt={partner.name} 
                     width={180} 
                     height={60} 
-                    className="object-contain filter brightness-90 group-hover:brightness-110 transition-all duration-300 group-hover:scale-105" 
+                    className="object-contain filter brightness-100 group-hover:brightness-110 transition-all duration-300 group-hover:scale-105" 
                   />
                 </div>
               ))}
