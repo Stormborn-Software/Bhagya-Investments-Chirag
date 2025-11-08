@@ -6,10 +6,11 @@ import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
 const Footer = () => {
   return (
     <footer className="bg-midnight-navy text-cloud-white relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-performance-green rounded-full filter blur-3xl"></div>
-        <div className="absolute top-0 right-0 w-96 h-96 bg-electric-blue rounded-full filter blur-3xl"></div>
+      {/* Colorful background decoration! */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full filter blur-3xl"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full filter blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full filter blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-6 py-16 relative z-10">
@@ -27,7 +28,7 @@ const Footer = () => {
                 Bhagya Investments
               </span>
             </div>
-            <p className="font-montserrat gradient-text italic font-semibold mb-4">
+            <p className="font-montserrat text-purple-400 italic font-semibold mb-4">
               Hedge Smart. Trade Wise.
             </p>
             <p className="text-slate-grey text-sm leading-relaxed">
@@ -36,16 +37,16 @@ const Footer = () => {
               confidence.
             </p>
 
-            {/* Social links could go here */}
+            {/* Social links - Colorful! */}
             <div className="flex space-x-4 mt-6">
               <a
                 href="https://x.com/ChiragN13605624"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-deep-navy rounded-full flex items-center justify-center hover:bg-performance-green/20 transition-colors duration-300"
+                className="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full flex items-center justify-center hover:scale-110 transition-all shadow-lg hover:shadow-cyan-500/50"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-5 h-5 text-white"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-label="Twitter"
@@ -57,10 +58,10 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/chirag-nagar-3a328a1a1/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-deep-navy rounded-full flex items-center justify-center hover:bg-performance-green/20 transition-colors duration-300"
+                className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center hover:scale-110 transition-all shadow-lg hover:shadow-blue-600/50"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-5 h-5 text-white"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-label="LinkedIn"
@@ -72,10 +73,10 @@ const Footer = () => {
                 href="https://www.instagram.com/tradewithchirag__/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-deep-navy rounded-full flex items-center justify-center hover:bg-performance-green/20 transition-colors duration-300"
+                className="w-10 h-10 bg-gradient-to-br from-pink-500 via-rose-500 to-orange-500 rounded-full flex items-center justify-center hover:scale-110 transition-all shadow-lg hover:shadow-pink-500/50"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-5 h-5 text-white"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-label="Instagram"
@@ -86,99 +87,99 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Column 2: Quick Links */}
+          {/* Column 2: Quick Links - Colorful hover! */}
           <div>
-            <h3 className="font-montserrat font-bold text-cloud-white mb-6 text-lg">
+            <h3 className="font-montserrat font-bold text-cloud-white mb-6 text-lg text-purple-400">
               Quick Links
             </h3>
             <ul className="space-y-3">
               <li>
                 <Link
                   href="/"
-                  className="text-slate-grey hover:text-performance-green transition-colors duration-300 flex items-center group"
+                  className="text-slate-grey hover:text-purple-400 transition-all duration-300 flex items-center group"
                 >
-                  <span className="w-2 h-2 bg-performance-green rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   Home
                 </Link>
               </li>
               <li>
                 <Link
                   href="/about"
-                  className="text-slate-grey hover:text-performance-green transition-colors duration-300 flex items-center group"
+                  className="text-slate-grey hover:text-cyan-400 transition-all duration-300 flex items-center group"
                 >
-                  <span className="w-2 h-2 bg-performance-green rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="w-2 h-2 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   About
                 </Link>
               </li>
               <li>
                 <Link
                   href="/services"
-                  className="text-slate-grey hover:text-performance-green transition-colors duration-300 flex items-center group"
+                  className="text-slate-grey hover:text-emerald-400 transition-all duration-300 flex items-center group"
                 >
-                  <span className="w-2 h-2 bg-performance-green rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="w-2 h-2 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   Services
                 </Link>
               </li>
               <li>
                 <Link
                   href="/results"
-                  className="text-slate-grey hover:text-performance-green transition-colors duration-300 flex items-center group"
+                  className="text-slate-grey hover:text-orange-400 transition-all duration-300 flex items-center group"
                 >
-                  <span className="w-2 h-2 bg-performance-green rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="w-2 h-2 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   Results
                 </Link>
               </li>
               <li>
                 <Link
                   href="/contact"
-                  className="text-slate-grey hover:text-performance-green transition-colors duration-300 flex items-center group"
+                  className="text-slate-grey hover:text-pink-400 transition-all duration-300 flex items-center group"
                 >
-                  <span className="w-2 h-2 bg-performance-green rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="w-2 h-2 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   Contact
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 3: Legal */}
+          {/* Column 3: Legal - Colorful hover! */}
           <div>
-            <h3 className="font-montserrat font-bold text-cloud-white mb-6 text-lg">
+            <h3 className="font-montserrat font-bold text-cloud-white mb-6 text-lg text-cyan-400">
               Legal
             </h3>
             <ul className="space-y-3">
               <li>
                 <Link
                   href="/privacy-policy"
-                  className="text-slate-grey hover:text-performance-green transition-colors duration-300 flex items-center group"
+                  className="text-slate-grey hover:text-emerald-400 transition-all duration-300 flex items-center group"
                 >
-                  <span className="w-2 h-2 bg-performance-green rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="w-2 h-2 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   Privacy Policy
                 </Link>
               </li>
               <li>
                 <Link
                   href="/terms-conditions"
-                  className="text-slate-grey hover:text-performance-green transition-colors duration-300 flex items-center group"
+                  className="text-slate-grey hover:text-purple-400 transition-all duration-300 flex items-center group"
                 >
-                  <span className="w-2 h-2 bg-performance-green rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   Terms & Conditions
                 </Link>
               </li>
               <li>
                 <Link
                   href="/disclaimer"
-                  className="text-slate-grey hover:text-performance-green transition-colors duration-300 flex items-center group"
+                  className="text-slate-grey hover:text-cyan-400 transition-all duration-300 flex items-center group"
                 >
-                  <span className="w-2 h-2 bg-performance-green rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                  <span className="w-2 h-2 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   Disclaimer
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 4: Contact Us */}
+          {/* Column 4: Contact Us - Colorful! */}
           <div>
-            <h3 className="font-montserrat font-bold text-cloud-white mb-6 text-lg">
+            <h3 className="font-montserrat font-bold text-cloud-white mb-6 text-lg text-emerald-400">
               Contact Us
             </h3>
             <address className="not-italic space-y-4">
@@ -186,8 +187,8 @@ const Footer = () => {
                 <p className="font-bold text-cloud-white mb-2">
                   Bhagya Investments
                 </p>
-                <div className="flex items-start text-slate-grey">
-                  <FiMapPin className="w-5 h-5 text-performance-green mr-2 mt-1 flex-shrink-0" />
+                <div className="flex items-start text-slate-grey hover:text-emerald-400 transition-colors">
+                  <FiMapPin className="w-5 h-5 text-emerald-400 mr-2 mt-1 flex-shrink-0" />
                   <p>
                     37, Ujjain trade Centre, Ghatkarpar Marg, near BJP Office,
                     Freeganj
@@ -196,14 +197,14 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-center text-slate-grey hover:text-performance-green transition-colors duration-300">
-                <FiMail className="w-5 h-5 text-performance-green mr-2 flex-shrink-0" />
+              <div className="flex items-center text-slate-grey hover:text-cyan-400 transition-colors duration-300">
+                <FiMail className="w-5 h-5 text-cyan-400 mr-2 flex-shrink-0" />
                 <a href="mailto:contact@bhagyainvestments.com">
                   contact@bhagyainvestments.com
                 </a>
               </div>
-              <div className="flex items-center text-slate-grey hover:text-performance-green transition-colors duration-300">
-                <FiPhone className="w-5 h-5 text-performance-green mr-2 flex-shrink-0" />
+              <div className="flex items-center text-slate-grey hover:text-purple-400 transition-colors duration-300">
+                <FiPhone className="w-5 h-5 text-purple-400 mr-2 flex-shrink-0" />
                 <a href="tel:+911234567890">+918655427334</a>
               </div>
             </address>
@@ -211,17 +212,17 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom bar */}
-      <div className="border-t border-deep-navy/50 relative z-10">
+      {/* Bottom bar - Colorful! */}
+      <div className="border-t border-purple-500/20 relative z-10">
         <div className="container mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center text-sm text-slate-grey">
           <p className="flex items-center">
-            <span className="w-2 h-2 bg-performance-green rounded-full mr-2 animate-pulse"></span>
+            <span className="w-2 h-2 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full mr-2 animate-pulse"></span>
             SEBI Registration No: INZ000160131
           </p>
           <p className="mt-4 md:mt-0">
             Crafted with <span className="text-red-500 animate-pulse">❤️</span>{" "}
             by{" "}
-            <span className="text-performance-green font-semibold">
+            <span className="font-semibold text-purple-400">
               Stormborn Software
             </span>
           </p>

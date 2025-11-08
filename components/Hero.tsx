@@ -5,13 +5,14 @@ const Hero = () => {
     <section className="relative bg-midnight-blue text-ivory py-20 md:py-32 overflow-hidden">
       {/* Abstract background animation with gradients */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        {/* Animated gradient orbs */}
-        <div className="absolute top-0 left-0 w-96 h-96 rounded-full bg-gradient-to-br from-gold/20 to-teal/20 filter blur-3xl animate-float"></div>
+        {/* Animated gradient orbs - Colorful! */}
+        <div className="absolute top-0 left-0 w-96 h-96 rounded-full bg-gradient-to-br from-purple-500/30 to-pink-500/30 filter blur-3xl animate-float"></div>
         <div
-          className="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-gradient-to-br from-teal/20 to-soft-green/20 filter blur-3xl animate-float"
+          className="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-gradient-to-br from-cyan-500/30 to-teal-500/30 filter blur-3xl animate-float"
           style={{ animationDelay: "2s" }}
         ></div>
-        <div className="absolute top-1/2 left-1/2 w-72 h-72 rounded-full bg-gradient-to-br from-gold/10 to-teal/10 filter blur-2xl animate-glow"></div>
+        <div className="absolute top-1/2 left-1/2 w-72 h-72 rounded-full bg-gradient-to-br from-orange-500/20 to-yellow-500/20 filter blur-2xl animate-glow"></div>
+        <div className="absolute top-20 right-20 w-64 h-64 rounded-full bg-gradient-to-br from-blue-500/25 to-indigo-500/25 filter blur-3xl animate-float" style={{ animationDelay: "1s" }}></div>
 
         {/* Geometric grid pattern */}
         <div className="absolute inset-0 opacity-5">
@@ -38,7 +39,7 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 text-center relative z-10">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-montserrat leading-tight animate-fade-in-up">
-          Unlock Your <span className="gradient-text">Market Potential</span>.
+          Unlock Your <span className="text-cyan-400">Market Potential</span>.
         </h1>
         <p
           className="mt-6 text-lg md:text-xl text-light-gray max-w-3xl mx-auto font-roboto animate-fade-in-up"
@@ -46,10 +47,11 @@ const Hero = () => {
         >
           Expert guidance in Stocks, Crypto, and Derivatives with intelligent
           hedging strategies. We help you{" "}
-          <span className="text-soft-green font-semibold">
+          <span className="font-semibold text-purple-400">
+            hedge smart
           </span>{" "}
           and{" "}
-          <span className="text-teal font-semibold">trade wise</span>.
+          <span className="font-semibold text-emerald-400">trade wise</span>.
         </p>
         <div
           className="mt-10 flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up"
@@ -59,7 +61,7 @@ const Hero = () => {
             href="https://choiceindia.com/open-free-demat-account?refercode=QzAwNTIxMzI=&source=Q0hPSUNFX0NPTk5FQ1RfQU5EUk9JRA=="
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-performance-green text-midnight-navy px-8 py-4 rounded-lg font-montserrat font-medium hover:bg-opacity-90 transition-all duration-300 hover:shadow-lg hover:shadow-performance-green/50 hover:scale-105"
+            className="group bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-8 py-4 rounded-lg font-montserrat font-medium transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/50 hover:scale-105"
           >
             <span className="flex items-center justify-center">
               Open Demat Account
@@ -82,7 +84,7 @@ const Hero = () => {
             href="https://www.delta.exchange/?code=JGARDS"
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-electric-blue text-midnight-navy px-8 py-4 rounded-lg font-montserrat font-medium hover:bg-opacity-90 transition-all duration-300 hover:shadow-lg hover:shadow-electric-blue/50 hover:scale-105"
+            className="group bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-8 py-4 rounded-lg font-montserrat font-medium transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 hover:scale-105"
           >
             <span className="flex items-center justify-center">
               Open Crypto Account
@@ -105,7 +107,7 @@ const Hero = () => {
             href="https://chat.whatsapp.com/KpKIlHAefzFFw9tn2tcMvt?mode=wwt"
             target="_blank"
             rel="noopener noreferrer"
-            className="group border-2 border-performance-green text-performance-green px-8 py-4 rounded-lg font-montserrat font-medium hover:bg-performance-green/10 transition-all duration-300 hover:shadow-lg hover:shadow-performance-green/30"
+            className="group border-2 border-purple-500 text-purple-400 px-8 py-4 rounded-lg font-montserrat font-medium hover:bg-purple-500/10 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/30 hover:scale-105"
           >
             <span className="flex items-center justify-center">
               Join WhatsApp Community
