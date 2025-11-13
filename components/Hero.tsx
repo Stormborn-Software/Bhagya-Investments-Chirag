@@ -1,4 +1,11 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import {
+  FiTrendingUp,
+  FiCpu,
+  FiMessageSquare,
+  FiArrowRight,
+} from "react-icons/fi";
 
 const Hero = () => {
   return (
@@ -12,7 +19,10 @@ const Hero = () => {
           style={{ animationDelay: "2s" }}
         ></div>
         <div className="absolute top-1/2 left-1/2 w-72 h-72 rounded-full bg-gradient-to-br from-orange-500/20 to-yellow-500/20 filter blur-2xl animate-glow"></div>
-        <div className="absolute top-20 right-20 w-64 h-64 rounded-full bg-gradient-to-br from-blue-500/25 to-indigo-500/25 filter blur-3xl animate-float" style={{ animationDelay: "1s" }}></div>
+        <div
+          className="absolute top-20 right-20 w-64 h-64 rounded-full bg-gradient-to-br from-blue-500/25 to-indigo-500/25 filter blur-3xl animate-float"
+          style={{ animationDelay: "1s" }}
+        ></div>
 
         {/* Geometric grid pattern */}
         <div className="absolute inset-0 opacity-5">
@@ -47,80 +57,10 @@ const Hero = () => {
         >
           Expert guidance in Stocks, Crypto, and Derivatives with intelligent
           hedging strategies. We help you{" "}
-          <span className="font-semibold text-purple-400">
-            hedge smart
-          </span>{" "}
-          and{" "}
+          <span className="font-semibold text-purple-400">hedge smart</span> and{" "}
           <span className="font-semibold text-emerald-400">trade wise</span>.
         </p>
-        <div
-          className="mt-10 flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up"
-          style={{ animationDelay: "0.4s" }}
-        >
-          <a
-            href="https://choiceindia.com/open-free-demat-account?refercode=QzAwNTIxMzI=&source=Q0hPSUNFX0NPTk5FQ1RfQU5EUk9JRA=="
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-8 py-4 rounded-lg font-montserrat font-medium transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/50 hover:scale-105"
-          >
-            <span className="flex items-center justify-center">
-              Open Demat Account
-              <svg
-                className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"
-                />
-              </svg>
-            </span>
-          </a>
-          <a
-            href="https://www.delta.exchange/?code=JGARDS"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-8 py-4 rounded-lg font-montserrat font-medium transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/50 hover:scale-105"
-          >
-            <span className="flex items-center justify-center">
-              Open Crypto Account
-              <svg
-                className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"
-                />
-              </svg>
-            </span>
-          </a>
-          <a
-            href="https://chat.whatsapp.com/KpKIlHAefzFFw9tn2tcMvt?mode=wwt"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group border-2 border-purple-500 text-purple-400 px-8 py-4 rounded-lg font-montserrat font-medium hover:bg-purple-500/10 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/30 hover:scale-105"
-          >
-            <span className="flex items-center justify-center">
-              Join WhatsApp Community
-              <svg
-                className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
-              </svg>
-            </span>
-          </a>
-        </div>
+        <ServiceFocusTabs />
 
         {/* Floating stats badges */}
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
@@ -138,13 +78,109 @@ const Hero = () => {
           </div>
           <div className="glass rounded-xl p-6 hover-glow">
             <div className="text-3xl font-bold text-teal font-montserrat">
-              ₹5Cr+
+              ₹50Cr+
             </div>
             <div className="text-sm text-light-gray mt-2">Assets Managed</div>
           </div>
         </div>
       </div>
     </section>
+  );
+};
+
+const tabData = [
+  {
+    id: "demat",
+    label: "Demat Account",
+    icon: <FiTrendingUp className="w-5 h-5 mr-2" />,
+    color: "emerald",
+    description:
+      "Access stocks, derivatives, and mutual funds with a powerful, feature-rich demat account.",
+    buttonText: "Start Trading Stocks",
+    link: "https://choiceindia.com/open-free-demat-account?refercode=QzAwNTIxMzI=&source=Q0hPSUNFX0NPTk5FQ1RfQU5EUk9JRA==",
+  },
+  {
+    id: "crypto",
+    label: "Crypto Account",
+    icon: <FiCpu className="w-5 h-5 mr-2" />,
+    color: "cyan",
+    description:
+      "Dive into the future of digital assets with expert guidance and advanced trading tools.",
+    buttonText: "Explore Crypto Markets",
+    link: "https://www.delta.exchange/?code=JGARDS",
+  },
+  {
+    id: "community",
+    label: "Community",
+    icon: <FiMessageSquare className="w-5 h-5 mr-2" />,
+    color: "purple",
+    description:
+      "Join our exclusive WhatsApp community for real-time insights, discussions, and support.",
+    buttonText: "Join the Conversation",
+    link: "https://chat.whatsapp.com/KpKIlHAefzFFw9tn2tcMvt?mode=wwt",
+  },
+];
+
+const ServiceFocusTabs = () => {
+  const [activeTab, setActiveTab] = useState("demat");
+  const activeTabData = tabData.find((tab) => tab.id === activeTab);
+
+  return (
+    <div
+      className="mt-16 animate-fade-in-up"
+      style={{ animationDelay: "0.4s" }}
+    >
+      <div className="max-w-3xl mx-auto">
+        {/* Tab Buttons */}
+        <div className="flex justify-center space-x-2 md:space-x-4 p-2 bg-slate-800/50 rounded-xl border border-slate-700/50">
+          {tabData.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`relative flex-1 flex items-center justify-center px-4 py-3 rounded-lg font-montserrat font-semibold text-sm md:text-base transition-all duration-300 focus:outline-none
+                ${
+                  activeTab === tab.id
+                    ? `bg-${tab.color}-500/20 text-${tab.color}-300 shadow-lg shadow-${tab.color}-500/20`
+                    : "text-slate-400 hover:bg-slate-700/50"
+                }`}
+            >
+              {tab.icon}
+              {tab.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Tab Content */}
+        <div className="mt-8 text-center">
+          {activeTabData && (
+            <div key={activeTab} className="animate-fade-in">
+              <p className="text-lg text-slate-300 max-w-xl mx-auto mb-8">
+                {activeTabData.description}
+              </p>
+              <a
+                href={activeTabData.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-flex items-center justify-center group bg-gradient-to-r from-${
+                  activeTabData.color
+                }-500 to-${
+                  activeTabData.color === "emerald"
+                    ? "teal"
+                    : activeTabData.color === "cyan"
+                    ? "blue"
+                    : "pink"
+                }-500 text-white px-8 py-4 rounded-lg font-montserrat font-bold transition-all duration-300 hover:shadow-2xl hover:shadow-${
+                  activeTabData.color
+                }-500/50 hover:scale-105`}
+              >
+                {activeTabData.buttonText}
+                <FiArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
   );
 };
 

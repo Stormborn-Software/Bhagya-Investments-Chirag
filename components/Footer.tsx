@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="flex flex-col">
             <div className="flex items-center mb-6">
               <Image
-                src="/logo.png"
+                src="/logo1.png"
                 alt="Bhagya Investments Logo" // Change this to your new logo file
                 width={40}
                 height={40}
