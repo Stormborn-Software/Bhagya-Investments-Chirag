@@ -200,7 +200,7 @@ const Footer = () => {
               <div className="flex items-center text-slate-grey hover:text-cyan-400 transition-colors duration-300">
                 <FiMail className="w-5 h-5 text-cyan-400 mr-2 flex-shrink-0" />
                 <a href="mailto:contact@bhagyainvestments.com">
-                  contact@bhagyainvestments.com
+                  bhagyainvestmentss@gmail.com
                 </a>
               </div>
               <div className="flex items-center text-slate-grey hover:text-purple-400 transition-colors duration-300">

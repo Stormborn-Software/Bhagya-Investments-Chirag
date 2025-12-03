@@ -72,13 +72,13 @@ const Hero = () => {
           </div>
           <div className="glass rounded-xl p-6 hover-glow">
             <div className="text-3xl font-bold text-gold font-montserrat">
-              500+
+              1000+
             </div>
             <div className="text-sm text-light-gray mt-2">Active Clients</div>
           </div>
           <div className="glass rounded-xl p-6 hover-glow">
             <div className="text-3xl font-bold text-teal font-montserrat">
-              ₹50Cr+
+              ₹150Cr+
             </div>
             <div className="text-sm text-light-gray mt-2">Assets Managed</div>
           </div>
@@ -107,7 +107,7 @@ const tabData = [
     description:
       "Dive into the future of digital assets with expert guidance and advanced trading tools.",
     buttonText: "Explore Crypto Markets",
-    link: "https://www.delta.exchange/?code=JGARDS",
+    link: "https://invite.coindcx.com/09027398",
   },
   {
     id: "community",

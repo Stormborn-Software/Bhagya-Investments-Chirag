@@ -7,6 +7,7 @@ const services = [
     title: "Stocks & Derivatives",
     description:
       "Strategic insights for equity and derivatives markets to help maximize your returns.",
+    link: "https://choiceindia.com/open-free-demat-account?refercode=QzAwNTIxMzI=&source=Q0hPSUNFX0NPTk5FQ1RfQU5EUk9JRA==",
     gradient: "from-emerald-500/20 to-teal-500/20",
     iconColor: "text-emerald-400",
     borderColor: "border-emerald-500/30 group-hover:border-emerald-500/60",
@@ -16,6 +17,7 @@ const services = [
     title: "Mutual Funds & SIPs",
     description:
       "Build long-term wealth with our tailored mutual fund and systematic investment plans.",
+    link: "https://choiceindia.com/open-free-demat-account?refercode=QzAwNTIxMzI=&source=Q0hPSUNFX0NPTk5FQ1RfQU5EUk9JRA==",
     gradient: "from-purple-500/20 to-pink-500/20",
     iconColor: "text-purple-400",
     borderColor: "border-purple-500/30 group-hover:border-purple-500/60",
@@ -25,6 +27,7 @@ const services = [
     title: "Commodities & Currencies",
     description:
       "Navigate global commodity and currency markets, from precious metals to forex pairs.",
+    link: "https://choiceindia.com/open-free-demat-account?refercode=QzAwNTIxMzI=&source=Q0hPSUNFX0NPTk5FQ1RfQU5EUk9JRA==",
     gradient: "from-orange-500/20 to-yellow-500/20",
     iconColor: "text-orange-400",
     borderColor: "border-orange-500/30 group-hover:border-orange-500/60",
@@ -34,6 +37,7 @@ const services = [
     title: "Crypto Investments",
     description:
       "Expert analysis for navigating the volatile world of digital assets like Bitcoin.",
+    link: "https://invite.coindcx.com/09027398",
     gradient: "from-cyan-500/20 to-blue-500/20",
     iconColor: "text-cyan-400",
     borderColor: "border-cyan-500/30 group-hover:border-cyan-500/60",
@@ -88,7 +92,7 @@ const Services = () => {
                   {service.description}
                 </p>
                 <a
-                  href="#"
+                  href={service.link || "#"}
                   className={`inline-flex items-center ${service.iconColor} font-medium text-sm transition-all duration-300 group-hover:translate-x-2`}
                 >
                   Learn More
@@ -109,7 +113,9 @@ const Services = () => {
               </div>
 
               {/* Corner decoration */}
-              <div className={`absolute top-0 right-0 w-20 h-20 bg-gradient-to-br ${service.gradient} rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
+              <div
+                className={`absolute top-0 right-0 w-20 h-20 bg-gradient-to-br ${service.gradient} rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+              ></div>
             </div>
           ))}
         </div>

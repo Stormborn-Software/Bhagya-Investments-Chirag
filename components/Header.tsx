@@ -82,7 +82,7 @@ const Header = () => {
             Demat Account
           </a>
           <a
-            href="https://www.delta.exchange/?code=JGARDS"
+            href="https://invite.coindcx.com/09027398"
             target="_blank"
             rel="noopener noreferrer"
             className="border-2 border-cyan-500 text-cyan-400 px-4 py-2 rounded-md font-montserrat text-sm font-black hover:bg-cyan-500/10 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30 hover:scale-105"
@@ -173,7 +173,7 @@ const Header = () => {
               Demat Account
             </a>
             <a
-              href="https://www.delta.exchange/?code=JGARDS"
+              href="https://invite.coindcx.com/09027398"
               target="_blank"
               rel="noopener noreferrer"
               className="border-2 border-cyan-500 text-cyan-400 w-full px-4 py-3 rounded-md font-montserrat font-black hover:bg-cyan-500/10 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30 hover:scale-105 text-center"
