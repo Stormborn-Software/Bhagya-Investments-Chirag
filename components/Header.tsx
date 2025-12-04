@@ -79,7 +79,7 @@ const Header = () => {
             rel="noopener noreferrer"
             className="border-2 border-emerald-500 text-emerald-400 px-4 py-2 rounded-md font-montserrat text-sm font-black hover:bg-emerald-500/10 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/30 hover:scale-105"
           >
-            Demat Account
+            Equity Account
           </a>
           <a
             href="https://invite.coindcx.com/09027398"

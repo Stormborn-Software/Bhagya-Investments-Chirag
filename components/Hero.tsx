@@ -91,7 +91,7 @@ const Hero = () => {
 const tabData = [
   {
     id: "demat",
-    label: "Demat Account",
+    label: "Equity & Derivative",
     icon: <FiTrendingUp className="w-5 h-5 mr-2" />,
     color: "emerald",
     description:
@@ -101,7 +101,7 @@ const tabData = [
   },
   {
     id: "crypto",
-    label: "Crypto Account",
+    label: "Crypto Trading",
     icon: <FiCpu className="w-5 h-5 mr-2" />,
     color: "cyan",
     description:
@@ -110,14 +110,14 @@ const tabData = [
     link: "https://invite.coindcx.com/09027398",
   },
   {
-    id: "community",
-    label: "Community",
+    id: "commoditys",
+    label: "Commodities",
     icon: <FiMessageSquare className="w-5 h-5 mr-2" />,
     color: "purple",
     description:
-      "Join our exclusive WhatsApp community for real-time insights, discussions, and support.",
-    buttonText: "Join the Conversation",
-    link: "https://chat.whatsapp.com/KpKIlHAefzFFw9tn2tcMvt?mode=wwt",
+      "Hedge against market volatility by trading in gold, silver, oil, and agricultural commodities.",
+    buttonText: "Trade Commodities Now",
+    link: "https://choiceindia.com/open-free-demat-account?refercode=QzAwNTIxMzI=&source=Q0hPSUNFX0NPTk5FQ1RfQU5EUk9JRA==",
   },
 ];
 

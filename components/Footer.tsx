@@ -159,7 +159,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/terms"
-                  className="text-slate-grey hover:text-performance-green transition-colors duration-300 flex items-center group"
+                  className="text-slate-grey hover:text-pink-400 transition-all duration-300 flex items-center group"
                 >
                   <span className="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   Terms & Conditions
